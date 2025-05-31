@@ -1,0 +1,303 @@
+body {
+    font-family: sans-serif;
+    background-color: grey;
+    color: black;
+    margin: 0;
+    width: 100%;
+}
+
+header {
+    background-color: #4ba73f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 5px solid #18ad04e0;
+    border-bottom: 5px solid #52a009;
+    background: #4dd648;
+    padding: 25px 100px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(132, 219, 143);
+    font-size: 36px;
+    margin: 30px 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+article {
+    background-color: #588d51;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    margin: 25px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+article:hover {
+    transform: translateY(-10px);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.logo {
+    height: 300px;
+}
+
+/* Секція про місто */
+#city {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.city-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.city-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+}
+
+.city-text {
+    max-width: 50%;
+    margin: 10px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.city-text h2 {
+    color: #2e7d32;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.city-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Солідний футер */
+footer {
+    background-color: #1b1b1b;
+    color: #f0f0f0;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    border-top: 5px solid #4caf50;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #81c784;
+    margin-bottom: 10px;
+}
+
+footer .footer-links {
+    margin-top: 15px;
+}
+
+footer .footer-links a {
+    color: #a5d6a7;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+    color: #ffffff;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 5px;
+    background-color: #4caf50;
+    border-radius: 2px;
+}
+.fun-fact {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    animation: popin 1s ease-out;
+}
+
+@keyframes popin {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#video-section {
+    padding: 40px 20px;
+    background-color: #f0f8f0;
+    text-align: center;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.video-description {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #eaf4ea;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #2e7d32;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+.video-container iframe {
+    width: 100%;
+    height: 550px; /* збільшено з 400px */
+    border: none;
+    border-radius: 10px;
+}
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 20px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .logo {
+        height: 150px;
+    }
+
+    .city-text h2 {
+        font-size: 24px;
+    }
+
+    .city-text p {
+        font-size: 16px;
+    }
+}
+
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 50px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 90%;
+        margin: 15px 0;
+    }
+
+    .logo {
+        height: 200px;
+    }
+
+    .city-container {
+        flex-direction: column;
+    }
+}
+
